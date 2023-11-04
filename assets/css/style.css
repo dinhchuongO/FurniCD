@@ -1,100 +1,163 @@
-.main{
+* {
+    box-sizing: border-box;
 }
-/* CLASS CHUNG DÙNG LẠI  */
-.title{
+
+body {
+    font-family: 'Saira', sans-serif;
+}
+
+/* common  */
+.container {
+    max-width: 1240px;
+}
+
+.title {
     font-size: 40px;
     font-weight: 600;
     line-height: 52px;
 }
 
-.sub-title{
+.sub-title {
     font-size: 20px;
     font-weight: 400;
     line-height: 34px;
 }
 
-.desc-title{
+.desc-title {
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
 }
 
-.desc-sub-title{
+.desc-sub-title {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
 }
-/* CLASS CHUNG DÙNG LẠI  */
-.hero{
-    height: 1000px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.30) 100%), url(../img/hero-background.png), lightgray -98.487px -222.684px / 106.839% 135.473% no-repeat;
+
+/* common  */
+.hero {
+    height: 120vh;
+    background: url(../img/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.section-1{
-    height: 591px;
-    padding-top: 76px;
-    padding-bottom: 76px;
+.section-1 {
+    padding: 113px 0 143px;
 }
-.section-1 .title{
+
+.section-1 .title {
     padding-right: 33px;
     margin-top: 10px;
 }
-.section-1 .sub-title{
+
+.section-1 .sub-title {
     margin-top: 14px;
     margin-bottom: 10px;
-    
+
 }
-.img-section-1{
+
+.img-section-1 {
     /* width: 554px;
     height: 430px; */
     padding: 1px 0;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 12px;
 }
 
-.desc{
+.desc {
     padding-left: 100px;
 }
 
-.desc-item{
+.desc-item {
     height: 96px;
     margin-top: 25px;
 }
 
-.check-icon{
+.check-icon {
     font-size: 32px;
 }
 
-.desc-content{
+.desc-content {
     width: 100%;
     padding-left: 48px;
 }
 
-.desc-content .desc-sub-title{
+.desc-content .desc-sub-title {
     margin-top: 8px;
 }
 
 
-.section-2{
-    height: 540px;
+.section-2 {}
+
+.section-2-desc {
+    font-size: 16px;
+    width: 254px;
 }
 
-.section-3{
+.check-all {
+    display: inline-block;
+    color: #23262F;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 1.6;
+    letter-spacing: 0.16px;
+    text-decoration-line: underline;
+    padding-right: 10px;
+}
+
+
+
+.next_item:hover .check-all {
+    cursor: pointer;
+    color: green;
+}
+
+.section-2_item {
+    position: relative;
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 12px;
+    transition: .3s linear;
+}
+
+
+.section-2_item:hover~.content,
+.section-2_item:hover {
+    transform: scale(0.9);
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.28px;
+    transition: .3s linear;
+}
+
+.section-3 {
     height: 591px;
 }
 
-.section-4{
+.section-4 {
     height: 1252px;
 }
 
-.section-5{
+.section-5 {
     height: 480px;
 }
 
-.section-6{
+.section-6 {
     height: 490px;
 }
 
-.footer{
+.footer {
     height: 513px;
 }
