@@ -34,41 +34,42 @@ body {
     font-weight: 400;
     line-height: 28px;
 }
+
 /* btn-arrow */
-.pg{
+.pg {
     height: 50px;
     display: flex;
 }
-.arrow-link{
+
+.arrow-link {
     width: 50px;
     height: 100%;
-    box-shadow: 0px 4px 10px rgba(15, 27, 51, 0.2 );
+    box-shadow: 0px 4px 10px rgba(15, 27, 51, 0.2);
 }
-.arrow-link .arrow{
+
+.arrow-link .arrow {
     font-size: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-  
-  }
+    transform: translate(-50%, -50%);
+
+}
+
 /* btn-arrow */
 /* img-section */
-.img-section{
-    width: 100%;  
+.img-section {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
+
 /* img-section */
 
-<<<<<<< HEAD
-/* header  */
-=======
 /* common  */
 
 /* HEADER */
->>>>>>> ca78649c1ba68de701c036427a12663fc7222a5d
 .header {
     position: relative;
     padding-top: 30px;
@@ -177,9 +178,9 @@ body {
     background: rgba(226, 226, 226, 0.40);
     backdrop-filter: blur(15px);
 }
+
 /* HEADER */
 
-<<<<<<< HEAD
 .btn:hover {
     color: yellow;
 }
@@ -228,9 +229,6 @@ body {
 
 /* section 1 */
 
-=======
-/* SECTION-1 */
->>>>>>> ca78649c1ba68de701c036427a12663fc7222a5d
 .section-1 {
     padding: 213px 0 143px;
 }
@@ -275,14 +273,11 @@ body {
 .desc-content .desc-sub-title {
     margin-top: 8px;
 }
+
 /* SECTION-1 */
 
-<<<<<<< HEAD
 
-/* section 2 */
-=======
 /* SECTION-2 */
->>>>>>> ca78649c1ba68de701c036427a12663fc7222a5d
 .section-2-desc {
     font-size: 16px;
     width: 254px;
@@ -341,6 +336,7 @@ body {
     letter-spacing: 0.28px;
     transition: .3s linear;
 }
+
 /* SECTION-2 */
 
 /* SECTION-3 */
@@ -349,13 +345,16 @@ body {
     padding: 96px 0;
     position: relative;
 }
-.section-3 .sub-title{
+
+.section-3 .sub-title {
     margin-top: 35px;
 }
+
 .section-3 .desc {
     padding: 41px 116px 83px 0;
-    
+
 }
+
 /* SECTION-3 */
 
 /* SECTION-4 */
@@ -427,13 +426,14 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 165%;
-    color: #666666;/* 23.1px */
+    color: #666666;
+    /* 23.1px */
     text-decoration: line-through;
     text-decoration-line: strikethrough;
 }
 
 
-.section-4 .paggination-list{
+.section-4 .paggination-list {
     width: 270px;
     position: absolute;
     bottom: 80px;
@@ -441,15 +441,15 @@ body {
     transform: translateX(-50%);
 }
 
-.section-4 .paggination-list .arrow{
+.section-4 .paggination-list .arrow {
     color: #797474;
 }
 
-.section-4 .paggination-list .arrow-link:hover .arrow{
+.section-4 .paggination-list .arrow-link:hover .arrow {
     color: #23262F;
 }
 
-.paggination{
+.paggination {
     width: calc(100% - 100px);
     height: 100%;
     padding: 20px 30px;
@@ -457,9 +457,11 @@ body {
     align-items: flex-start;
     gap: 15px;
 }
-.circle{
+
+.circle {
     font-size: 10px;
 }
+
 /* SECTION-4 */
 
 
@@ -469,40 +471,41 @@ body {
     padding: 70px 0;
 }
 
-.avt-title{
+.avt-title {
     color: #ccc;
     font-size: 14px;
 }
 
-.section-5 .title{
-   margin-bottom: 36px;
+.section-5 .title {
+    margin-bottom: 36px;
 }
 
-.section-5 .sub-title{
+.section-5 .sub-title {
     width: calc(100% - 107px);
 }
 
-.section-5 .paggination-list{
+.section-5 .paggination-list {
     width: 124px;
     justify-content: space-between;
     margin-top: 31px;
 }
 
-.section-5 .paggination-list .arrow{
+.section-5 .paggination-list .arrow {
     color: #23262F;
 }
 
-.section-5 .paggination-list .arrow-link:hover .arrow{
+.section-5 .paggination-list .arrow-link:hover .arrow {
     color: #fff;
 }
 
-.section-5 .paggination-list .arrow-link:hover{
+.section-5 .paggination-list .arrow-link:hover {
     background-color: #286F6C;
 }
 
-.section-5 .img-section-5{
+.section-5 .img-section-5 {
     height: 100%;
 }
+
 /* SECTION-5 */
 
 /* SECTION-6 */
@@ -514,23 +517,23 @@ body {
 
 }
 
-.section-6 .title{
+.section-6 .title {
     color: #fff;
     padding-right: 168px;
     margin-top: 100px;
 }
 
-.section-6 .sub-title{
+.section-6 .sub-title {
     color: #fff;
-   margin-top: 20px;
+    margin-top: 20px;
 }
 
-.section-6 input{
+.section-6 input {
     width: 100%;
-    
+
 }
 
-.section-6 .btn{
+.section-6 .btn {
     border-radius: 8px;
     background: #23262F;
     color: #fff;
@@ -540,6 +543,7 @@ body {
     height: 60px;
     padding: 0;
 }
+
 /* SECTION-6 */
 .footer {
     height: 513px;
