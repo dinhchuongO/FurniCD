@@ -73,55 +73,56 @@ body {
 .header {
     margin-top: -149px;
     position: relative;
-    height: 135vh;
+    height: 120vh;
     background: url(../img/hero-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
+    padding-top: 156px;
 }
 
-.header__inner {
-    padding: 20px 0;
-
-}
-
-.background {
+.header-inner {
+    width: 100%;
+    height: 70px;
     position: fixed;
     top: 0;
-    width: 100%;
-    background: transparent;
-    backdrop-filter: blur(50px);
-    z-index: 3;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: black
+}
+
+.brand {
+    height: 100%;
+    width: fit-content;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-right: 15px;
 }
 
-.logo__name,
+.brand_link {
+    height: 100%;
+    color: #fff;
+    font-weight: 550;
+    font-size: 35px;
+    line-height: 70px;
+    text-decoration: none;
+}
+
 .nav-link,
-.sign_in,
-.sign_up {
-    text-shadow: 2px 2px 2px #000;
+.btn {
+    height: 100%;
+    padding: 10px auto;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
 }
-
-.logo__name {
-    color: #FFF;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-}
-
-
 
 .nav-link {
     position: relative;
-    color: #FFF;
-    font-weight: 600;
+    color: #fff;
 }
 
 .nav-link::after {
@@ -145,24 +146,21 @@ body {
     color: yellow;
 }
 
-.sign_in {
-    font-weight: 550;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-}
-
-.sign_up {
-    font-weight: 550;
-    background-color: transparent;
-    border: 1px solid #fff;
+.btn-sign {
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 99px;
-    padding: 10px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
     color: #fff;
 }
 
-.sign_in:hover,
-.sign_up:hover {
+.sign-in {
+    border: none;
+}
+
+.sign-in:hover,
+.sign-up:hover {
     cursor: pointer;
     color: yellow;
     border-color: yellow;
@@ -177,6 +175,7 @@ body {
     font-weight: 600;
     line-height: 1.2;
     text-transform: capitalize;
+
 }
 
 .header__desc {
@@ -190,9 +189,12 @@ body {
 }
 
 .btn-section-1 {
-    margin-top: 65px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 257px;
+    height: 62px;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
