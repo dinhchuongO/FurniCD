@@ -71,13 +71,11 @@ body {
 
 /* HEADER */
 .header {
-    margin-top: -149px;
     position: relative;
     height: 120vh;
     background: url(../img/hero-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 156px;
 }
 
 .header-inner {
@@ -167,7 +165,7 @@ body {
 }
 
 .main__heading {
-    padding-top: 390px;
+    padding-top: 225px;
     display: block;
     color: #FFF;
     text-align: center;
@@ -189,12 +187,11 @@ body {
 }
 
 .btn-section-1 {
+    margin-top: 65px;
     width: 257px;
     height: 62px;
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    transform: translateX(-50%);
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
@@ -213,7 +210,7 @@ body {
 .adv {
     width: 1140px;
     position: absolute;
-    bottom: -100px;
+    top: 108%;
     left: 50%;
     transform: translateX(-50%);
     padding: 40px 0;
