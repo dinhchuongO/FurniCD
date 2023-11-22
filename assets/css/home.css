@@ -6,6 +6,7 @@ body {
     font-family: 'Saira', sans-serif;
 }
 
+
 /* common  */
 .container {
     max-width: 85vw;
@@ -71,11 +72,13 @@ body {
 
 /* HEADER */
 .header {
-    position: relative;
-    height: 120vh;
-    background: url(../img/hero-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100vh;
+    background: #fc00ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .header-inner {
@@ -86,7 +89,7 @@ body {
     left: 0;
     right: 0;
     z-index: 200;
-    background-color: black
+    background-color: black;
 }
 
 .brand {
@@ -253,7 +256,7 @@ body {
 /* section 1 */
 
 .section-1 {
-    padding: 213px 0 143px;
+    padding: 70px 0 143px;
 }
 
 .section-1 .title {
