@@ -1,10 +1,4 @@
 $(document).ready(function(){
-    $("#Sign-up").click(function(){
-        $("#modal-sign-up").modal()
-    })
-    $("#Sign-in").click(function(){
-        $("#modal-sign-in").modal()
-    })
     Name = $("#Name")
     errorName = $("#errorName")
     function checkName(){
@@ -120,8 +114,7 @@ $(document).ready(function(){
     }
     $("#Log-in").click(function(){
         if(checkEmailin()&&checkPassin()){
-            alert("Đăng nhập thành công")
-            $("#modal-sign-in").modal("hide")  
+            alert("Đăng nhập thành công")  
             Emailin.html("")
             Passin.html("")
         }
