@@ -75,11 +75,14 @@ $(document).ready(function(){
         if(!checkEmail ||!checkName ||!checkPass ||!checkRePass){
             alert("Chưa nhập thông tin")
         }
-        localStorage.setItem('Email',Email.val())
-        localStorage.setItem('Pass',RePass.val())
-        localStorage.setItem('Name',Name.val())
-        alert("Đăng kí thành công")
-        $("#modal-sign-up").modal("hide")
+        else{
+            localStorage.setItem('Email',Email.val())
+            localStorage.setItem('Pass',RePass.val())
+            localStorage.setItem('Name',Name.val())
+            window.location.href="../html/sign-up.html"
+            alert("Đăng kí thành công")
+        }
+        
     })
 
 
@@ -114,7 +117,8 @@ $(document).ready(function(){
     }
     $("#Log-in").click(function(){
         if(checkEmailin()&&checkPassin()){
-            alert("Đăng nhập thành công")  
+            alert("Đăng nhập thành công")
+            window.location.href="../html/home.html"
             Emailin.html("")
             Passin.html("")
         }
