@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/home.css">
-    <script src="../Javascript/main.js"></script>
+    <link rel="stylesheet" href="../assets/css/slider.css">
+    <script src="../assets/framework/jquery.js"></script>
+    <script src="../Javascript/slider.js"></script>
 </head>
 
 <body>
@@ -35,7 +37,7 @@
                                     <a class="nav-link" href="">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">About</a>
+                                    <a class="nav-link" href="./product-1.html">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../html/product-all.html">Product</a>
@@ -53,43 +55,86 @@
 
                 </div>
             </div>
-            <div class="main__heading">
-                Creative Home Simpify your<br>Furniture
-            </div>
-            <p class="header__desc">
-                Do i have consent to record this
-                meeting gain locaion, root-and-<br>branch, review,
-                nor game plan who’s the goto
-            </p>
-            <button class=" btn btn-section-1">Shop now</button>
-            <div class="adv">
-                <div class="row">
-                    <div class="col-3 ex">
-                        <div class="number">7</div>
-                        <p class="ex-desc">
-                            Year <br> Experience
-                        </p>
+            <div class="container_slider">
+                <!-- <div class="header_slider">
+                    <img src="../assets/img/logo.png" class="logo_slider" />
+
+                </div> -->
+                <div class="background-rotate">
+                    <div class="bg-rotate"></div>
+                </div>
+                <h1 class="slider_heading">Page này nghịch code <span style="color: #AD925C">(Lùn Dev)</span></h1>
+                <div class="list">
+                    <div class="item" id="item_0">
+                        <img src="../assets/img/6.png" alt="">
+                        <img src="../assets/img/3.png" alt="">
+                        <img src="../assets/img/9.png" alt="">
+                        <img src="../assets/img/3.png" alt="">
+                        <div class="content_slider">
+                            <div class="itemtext"> <img src="../assets/img/6.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/3.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/9.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                        </div>
                     </div>
-                    <div class=" col-3 ex">
-                        <div class="number">2</div>
-                        <p class="ex-desc">
-                            Opened in <br> the country
-                        </p>
+                    <div class="item" id="item_1">
+                        <img src="../assets/img/5.png" alt="">
+                        <img src="../assets/img/1.png" alt="">
+                        <img src="../assets/img/8.png" alt="">
+                        <img src="../assets/img/1.png" alt="">
+                        <div class="content_slider">
+                            <div class="itemtext"> <img src="../assets/img/5.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/1.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/8.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                        </div>
                     </div>
-                    <div class=" col-3 ex">
-                        <div class="number">10k+</div>
-                        <p class="ex-desc">
-                            Furniture <br> sold
-                        </p>
+                    <div class="item" id="item_2">
+                        <img src="../assets/img/7.png" alt="">
+                        <img src="../assets/img/3.png" alt="">
+                        <img src="../assets/img/4.png" alt="">
+                        <img src="../assets/img/3.png" alt="">
+                        <div class="content_slider">
+                            <div class="itemtext"> <img src="../assets/img/7.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/3.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/4.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                        </div>
                     </div>
-                    <div class=" col-3 ex">
-                        <div class="number">260+</div>
-                        <p class="ex-desc">
-                            Variant <br> Furniture
-                        </p>
+                    <div class="item" id="item_3">
+                        <img src="../assets/img/5.png" alt="">
+                        <img src="../assets/img/1.png" alt="">
+                        <img src="../assets/img/8.png" alt="">
+                        <img src="../assets/img/1.png" alt="">
+                        <div class="content_slider">
+                            <div class="itemtext"> <img src="../assets/img/5.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/1.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                            <div class="itemtext"> <img src="../assets/img/8.png" alt=""> <span>45$</span><span>Sản
+                                    phẩm</span> </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="menu">
+                <ul>
+                    <li><i class="fa-regular fa-keyboard"></i> </li>
+                    <li><i class="fa-regular fa-pen-to-square"></i></li>
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li id="next"><i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+            </div>
+
+            <img src="../assets/img/3.png" alt="" style="position: fixed; bottom:-280px;width:300px">
         </header>
         <!-- section 1 -->
         <section class="section-1 ">
@@ -456,7 +501,6 @@
             </div>
         </footer>
     </div>
-
 
 </body>
 
