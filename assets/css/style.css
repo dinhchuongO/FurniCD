@@ -2,6 +2,26 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow: overlay;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, .2);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
 
 
 .header-inner {
@@ -47,9 +67,10 @@
 .nav-link {
     position: relative;
     color: #fff;
+    font-size: 18px;
 }
 
-.nav-link::after {
+/* .nav-link::after {
     content: "";
     position: absolute;
     background-color: yellow;
@@ -60,20 +81,21 @@
     top: 0;
     transition: .35s ease;
     border-radius: 6px;
-}
+} */
 
-.nav-link:hover:after {
+/* .nav-link:hover:after {
     width: 100%;
-}
+} */
 
 .nav-link:hover {
-    color: yellow;
+    color: #FFF;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
 
 .btn-sign {
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 99px;
+    font-weight: bold;
+    padding: 8px 26px;
+    border-radius: 10px;
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -83,11 +105,29 @@
     border: none;
 }
 
-.sign-in:hover,
-.sign-up:hover {
+.sign-in:hover {
     cursor: pointer;
     color: yellow;
     border-color: yellow;
+}
+
+.sign-up:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.search_nav {
+    position: relative;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    padding-left: 40px;
+    color: #000;
+}
+
+.posit {
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
 
 /* footer */

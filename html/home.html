@@ -22,51 +22,19 @@
     <div class="container-fluid p-0">
         <!-- hero -->
         <header class="header">
-            <!-- <div class="header-inner d-flex align-items-center">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-3 d-flex align-items-center">
-                            <div class=" brand d-flex justify-content-start">
-                                <img src="../assets/img/logo.png" alt="" class="logo">
-                                <span href="" class="brand_link align-items-center">FurniCD</span>
-                            </div>
-                        </div>
-                        <div class="col-9 d-flex align-items-center justify-content-end">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./product-1.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../html/product-all.html">Product</a>
-                                </li>
-                                <li class="nav-item mr-3">
-                                    <a class="nav-link" href="">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <button class="btn btn-sign sign-in">Sign in </button>
-                                    <button class="btn btn-sign sign-up">Sign up</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
             <div class="container-fluid p-0 w-100 background-color py-2 position-fixed top-0 start-0 end-0"
                 style="z-index: 100; background: #000;">
                 <div class="row px-4 ">
                     <div class="col-1 ">
-                        <img src="../assets/img/logo.png" class="img-fluid" alt="">
+                        <a href="./home.html"><img src="../assets/img/logo.png" class="img-fluid" alt=""></a>
                     </div>
                     <div class="col-11">
                         <div class="row d-flex justify-content-between">
                             <div class="col-2 d-flex align-items-center ">
-                                <button class="btn  bg-transparent" type="submit"><i
-                                        class="fa-solid fa-magnifying-glass"></i></button>
-                                <span>090-123-3455</span>
+                                <button class="btn  bg-transparent" type="submit">
+                                    <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>
+                                </button>
+                                <span style="color: #fff; font-weight: bold;">090-123-3455</span>
                             </div>
                             <div class="col-4 ">
                                 <ul class="nav d-flex justify-content-between">
@@ -74,7 +42,7 @@
                                         <a class="nav-link " href="../html/home.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="">About</a>
+                                        <a class="nav-link " href="./product-1.html">About</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link " href="../html/product-all.html">Product</a>
@@ -85,26 +53,23 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-between py-3">
+                        <div class="row d-flex justify-content-between pt-3">
                             <div class="col-1  d-flex align-items-center">
-                                <button class=" btn rounded-1 border-white bg-gradient shadow-none ">
-                                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                                <button class=" btn    shadow-none ">
+                                    <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
                                 </button>
                             </div>
                             <div class="col-6 d-flex ">
-                                <input class="form-control border-white rounded-pill  text-white" type="search"
-                                    placeholder="Search" aria-label="Search">
-                                <button class="btn rounded-circle bg-transparent" type="submit"><i
-                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <input class="search_nav form-control " type="search" placeholder="Search..."
+                                    aria-label="Search">
+                                <button class="btn rounded-circle bg-transparent posit" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                             </div>
                             <div class="col-3  d-flex justify-content-center">
-                                <div class="w-100 d-flex justify-content-between ">
-                                    <button
-                                        class="btn border-white text-white bg-transparent rounded-pill w-50 mx-1">Sign
-                                        in</button>
-                                    <button
-                                        class="btn border-white text-white bg-transparent rounded-pill w-50 mx-1">Sign
-                                        up</button>
+                                <div class="w-100 d-flex justify-content-end">
+                                    <button class="btn-sign sign-in">Sign in</button>
+                                    <button class="btn-sign sign-up">Sign up</button>
                                 </div>
                             </div>
                         </div>
@@ -112,10 +77,6 @@
                 </div>
             </div>
             <div class="container_slider">
-                <!-- <div class="header_slider">
-                    <img src="../assets/img/logo.png" class="logo_slider" />
-
-                </div> -->
                 <div class="background-rotate">
                     <div class="bg-rotate"></div>
                 </div>
@@ -197,7 +158,7 @@
                 <ul>
                     <li><i class="fa-regular fa-keyboard"></i> </li>
                     <li><i class="fa-regular fa-pen-to-square"></i></li>
-                    <li><i class="fa-regular fa-user"></i></li>
+                    <li id="prev"><i class="fa-solid fa-pause"></i></li>
                     <li id="next"><i class="fa-solid fa-arrow-right"></i></li>
                 </ul>
             </div>
