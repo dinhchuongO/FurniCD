@@ -18,6 +18,8 @@ body {
 }
 
 .item_thumb {
+    cursor: pointer;
+    padding: 0;
     width: 450px;
     height: 430px;
 }
@@ -315,6 +317,7 @@ body {
 .info_shop {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 25px;
     padding: 25px;
     background-color: #fff;
@@ -344,6 +347,7 @@ body {
     height: 78px;
     border-radius: 50%;
     object-fit: cover;
+    background-color: #000;
 }
 
 .btn_fix {
@@ -513,4 +517,13 @@ body {
     color: #0000008A;
     background-color: #eee;
     font-size: 1.8rem;
+}
+
+
+.carousel-inner {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
 }
