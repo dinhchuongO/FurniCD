@@ -170,15 +170,16 @@ body {
 }
 
 .section-2_item:hover~.content {
-    transform: translate(-50px, -50px);
-    color: yellow;
+    /* transform: translateY(-50px); */
+    scale: 0.9;
 
 }
 
 .content {
     position: absolute;
-    left: 10%;
-    bottom: 25px;
+    left: 45%;
+    transform: translateX(-50%);
+    top: 50%;
     cursor: pointer;
     color: #fff;
     font-size: 28px;

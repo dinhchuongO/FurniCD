@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product item 1</title>
     <link rel="stylesheet" href="../assets/FAVICON/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="../assets/font/Saira">
     <script src="../assets/framework/jquery.js"></script>
@@ -14,6 +14,27 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/product-1.css">
     <script src="../Javascript/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#lovev").on("click", function () {
+                $(this).html('<i class="fa-solid fa-heart fa-xl pr-3" style="color: #c00202;"></i>');
+            });
+
+
+            var currentState = 1;
+
+            $("#lovev").on("click", function () {
+                // Chuyển đổi giữa hai trạng thái
+                if (currentState === 1) {
+                    $(this).html('<i class="fa-solid fa-heart fa-xl pr-3" style="color: #c00202;"></i>');
+                    currentState = 2;
+                } else {
+                    $(this).html('<i class="fa-regular fa-heart fa-xl pr-3" style="color: #ff424f;"></i>');
+                    currentState = 1;
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -74,7 +95,9 @@
                                 <i class="fa-brands fa-pinterest fa-xl" style="color: #de0217;"></i>
                             </div>
                             <div class="love d-flex align-items-center">
-                                <i class="fa-regular fa-heart fa-xl pr-3" style="color: #ff424f;"></i>
+                                <div id="lovev">
+                                    <i class="fa-regular fa-heart fa-xl pr-3" style="color: #ff424f;"></i>
+                                </div>
                                 <p style="font-size: 1.8rem; white-space: nowrap;">Liked (1.1k)</p>
                             </div>
                         </div>
@@ -110,7 +133,9 @@
                                 </div>
                             </div>
                             <div class="best">
-                                <div><i class="fa-brands fa-shopify" style="color: #c00202;"></i></div>
+                                <div>
+                                    <i class="fa-brands fa-shopify" style="color: #c00202;"></i>
+                                </div>
                                 <div class="seller">
                                     Best seller <i class="fa-regular fa-circle-question text-dark fa-xs ml-1"></i> <br>
                                     <span>
@@ -1107,6 +1132,7 @@
             </div>
         </footer>
     </div>
+
 </body>
 
 </html>

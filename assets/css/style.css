@@ -87,9 +87,14 @@ body {
     width: 100%;
 } */
 
+
+.sign-in:hover,
 .nav-link:hover {
     color: #FFF;
-    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    border-radius: 5px;
+    /* background: #333333; */
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: #FFFFFF;
 }
 
 .btn-sign {
@@ -105,15 +110,10 @@ body {
     border: none;
 }
 
-.sign-in:hover {
-    cursor: pointer;
-    color: yellow;
-    border-color: yellow;
-}
 
 .sign-up:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #FF2D95;
+    color: #fff;
 }
 
 .search_nav {
