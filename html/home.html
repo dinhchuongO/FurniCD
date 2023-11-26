@@ -7,70 +7,71 @@
     <title>Furniture CD</title>
     <link rel="stylesheet" href="../assets/FAVICON/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="../assets/font/Saira">
-    <link rel="stylesheet" href="../assets/framework/bootstrap-4/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/framework/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <script src="../assets/framework/bootstrap-4/js/bootstrap.min.js"></script>
+    <script src="../assets/framework/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/slider.css">
     <script src="../assets/framework/jquery.js"></script>
     <script src="../Javascript/slider.js"></script>
+    <script src="../Javascript/add-to-cart.js"></script>
+    <script src="../Javascript/Sign-in.js"></script>
 </head>
 
 <body>
     <div class="container-fluid p-0">
-        <!-- hero -->
-        <header class="header">
-            <div class="container-fluid p-0 w-100 background-color py-2 position-fixed top-0 start-0 end-0"
-                style="z-index: 100; background: #000;">
-                <div class="row px-4 ">
+        <header class="header-full">
+            <div class="container-fluid background-color py-2 position-fixed top-0 start-0 end-0 header ">
+                <div class="row px-5 ">
                     <div class="col-1 ">
-                        <a href="./home.html"><img src="../assets/img/logo.png" class="img-fluid" alt=""></a>
+                        <img src="../assets/img/logo.png" class="header-logo" alt="">
                     </div>
-                    <div class="col-11">
+                    <div class="col-11 ">
                         <div class="row d-flex justify-content-between">
-                            <div class="col-2 d-flex align-items-center ">
-                                <button class="btn  bg-transparent" type="submit">
-                                    <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>
-                                </button>
-                                <span style="color: #fff; font-weight: bold;">090-123-3455</span>
-                            </div>
-                            <div class="col-4 ">
+                            <div class="col-6">
                                 <ul class="nav d-flex justify-content-between">
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="../html/home.html">Home</a>
+                                    <a class="nav-link " href="../html/home.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="./product-1.html">About</a>
+                                    <a class="nav-link " href="../html/home.html#about">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="../html/product-all.html">Product</a>
+                                    <a class="nav-link " href="../html/product-all.html">Product</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="">Contact</a>
+                                    <a class="nav-link " href="../html/order-pay.html">Order</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#footer">Contact</a>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="row d-flex justify-content-between pt-3">
-                            <div class="col-1  d-flex align-items-center">
-                                <button class=" btn    shadow-none ">
-                                    <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
-                                </button>
-                            </div>
-                            <div class="col-6 d-flex ">
-                                <input class="search_nav form-control " type="search" placeholder="Search..."
-                                    aria-label="Search">
-                                <button class="btn rounded-circle bg-transparent posit" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </div>
-                            <div class="col-3  d-flex justify-content-center">
-                                <div class="w-100 d-flex justify-content-end">
-                                    <button class="btn-sign sign-in">Sign in</button>
-                                    <button class="btn-sign sign-up">Sign up</button>
+                            <div class="col-4  d-flex justify-content-end">
+                                <div id="add-logo" class="w-100 d-flex justify-content-end">
+                                    <a id="btn-1" href="../html/sign-in.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign in</a>
+                                    <a id="btn-2" href="../html/sign-up.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign up</a>
+                                    <img id="avta" src="../assets/img/avatar.svg" class="avatar-header " alt="">
+                                    <button id="out" class="btn  avatar-header mx-2"><i class="fa-solid  fa-right-from-bracket fs-5 text-white"></i></button> 
                                 </div>
+                            </div>
+                            <!-- <div class="col-3 d-flex align-items-center ">
+                                <button class="btn  bg-transparent" type="submit"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></button>
+                                <span class="text-white">0123-234-5678</span>
+                            </div> -->
+                        </div>
+                        <div class="row d-flex justify-content-between align-items-center py-1">
+                            <div class="col-5 d-flex ">
+                                <div class="input-group position-relative ">
+                                    <label class="btn py-2 position-absolute top-0 start-0 rounded-pill" ><i class="fa-solid fa-magnifying-glass"></i></label>
+                                    <input type="search" class="w-100 py-2 ps-5 rounded-pill" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="col-1  d-flex justify-content-end align-items-center">
+                                <button class=" btn rounded-1 bg-transparent shadow-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-cart-shopping" style="color:#ffffff;"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -80,7 +81,6 @@
                 <div class="background-rotate">
                     <div class="bg-rotate"></div>
                 </div>
-                <h1 class="slider_heading">DC Furniture</h1>
                 <div class="list">
                     <div class="item" id="item_0">
                         <img src="../assets/img/6.png" alt="">
@@ -158,7 +158,7 @@
                 <ul>
                     <li><i class="fa-regular fa-keyboard"></i> </li>
                     <li><i class="fa-regular fa-pen-to-square"></i></li>
-                    <li id="prev"><i class="fa-solid fa-pause"></i></li>
+                    <li><i class="fa-regular fa-user"></i></li>
                     <li id="next"><i class="fa-solid fa-arrow-right"></i></li>
                 </ul>
             </div>
@@ -166,14 +166,14 @@
             <img src="../assets/img/3.png" alt="" style="position: fixed; bottom:-280px;width:300px">
         </header>
         <!-- section 1 -->
-        <section class="section-1 ">
-            <div class="container">
+        <section  class="section-1 ">
+            <div  class="container">
                 <div class="row">
                     <div class="col-6 p-0">
                         <img class=" img-fluid img-section" src="../assets/img/img-section-1.png" alt="">
                     </div>
                     <div class="col-6 desc">
-                        <h2 class="title">We Create Your Home More Aestetic</h2>
+                        <h2  class="title">We Create Your Home More Aestetic</h2>
                         <p class="sub-title">Furnitre power is a software as services for multiperpose business
                             management system, </p>
                         <div class="desc-item position-relative">
@@ -197,7 +197,7 @@
             </div>
         </section>
         <!-- section 2 -->
-        <section class="section-2">
+        <section  class="section-2">
             <div class="container">
                 <div class="row">
                     <div class="col-3">
@@ -211,25 +211,22 @@
                     </div>
                     <div class="col-3 ">
                         <img class="section-2_item" src="../assets/img/section-2-item1.png" alt="item 1">
-                        <div class="content">Chair</div>
                     </div>
                     <div class="col-3">
                         <img class="section-2_item" src="../assets/img/section-2-item2.png" alt="item 2">
-                        <div class="content">Bed</div>
                     </div>
                     <div class="col-3">
                         <img class="section-2_item" src="../assets/img/section-2-item3.png" alt="item 3">
-                        <div class="content">Cupboard</div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- section 3 -->
-        <section class="section-3">
+        <section id="about" class="section-3">
             <div class="container ">
                 <div class="row">
                     <div class="col-6 desc">
-                        <h2 class="title">The Best Furniture Manufacturer Of Your Choice</h2>
+                        <h2 class="title">About Us</h2>
                         <p class="sub-title">Furnitre power is a software as services for multiperpose business
                             management system, expecially for them who are running two or more business exploree the
                             future Furnitre power is a software as services </p>
@@ -250,106 +247,130 @@
             </p>
             <div class="container ">
                 <div class="product-list">
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-1.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-9.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-1.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">Yellow Sofa</h3>
+                              <span class="price">$50.00</span>
+                              <span class="sale">$82.00</span>
                             </div>
+                          </div>
                         </div>
                         <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-2.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-10.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-2.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">White Sofa</h3>
+                              <span class="price">$75.00</span>
+                              <span class="sale">$99.00</span>
                             </div>
+                          </div>
                         </div>
                         <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-3.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-11.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-3.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">Ceiling Light</h3>
+                              <span class="price">$24.00</span>
+                              <span class="sale">$100.00</span>
                             </div>
+                          </div>
                         </div>
                         <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-4.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-12.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-4.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">Dark Table</h3>
+                              <span class="price">$55.00</span>
+                              <span class="sale">$87.00</span>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="row mt-5">
+                      </div>
+                      <div class="row mb-5">
                         <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-5.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-13.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-5.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">Green Sofa</h3>
+                              <span class="price">$75.00</span>
+                              <span class="sale">$82.00</span>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-6.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
-                            </div>
+                          </div>
                         </div>
                         <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-8.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-14.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-6.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">Open Shelf</h3>
+                              <span class="price">$55.00</span>
+                              <span class="sale">$89.00</span>
                             </div>
+                          </div>
                         </div>
                         <div class="col-3">
-                            <div class="card position-relative card-box " style="width: 100%; height: 380px;">
-                                <a href="" class="add-link"><img src="../assets/img/plus.svg"
-                                        class="position-absolute add-btn" alt=""></a>
-                                <img src="../assets/img/product-4.png" class=" card-img-top img-card" alt="...">
-                                <div class="card-body p-0">
-                                    <h3 class="desc-title">Ceiling Light</h3>
-                                    <span class="price">$75.00</span>
-                                    <span class="sale">$82.00</span>
-                                </div>
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-15.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-7.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">Sofa Open</h3>
+                              <span class="price">$125.00</span>
+                              <span class="sale">$200.00</span>
                             </div>
+                          </div>
                         </div>
-                    </div>
+                        <div class="col-3">
+                          <div class="card card-box " style="width: 100%; height: 380px;">
+            
+                            <img src="../assets/img/product-16.svg" class=" card-img-top img-card" alt="...">
+                            <div class="card-body position-relative p-0">
+                              <a href="../html/product-8.html" class="cart-btn  position-absolute">
+                                <i
+                                  class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                              </a>
+                              <h3 class="desc-title">Around Chair</h3>
+                              <span class="price">$85.00</span>
+                              <span class="sale">$102.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="pg paggination-list">
@@ -385,12 +406,6 @@
                         </div>
                         <p class="sub-title">“They are have a perfect touch for make something so professional ,interest
                             and useful for a lot of people .”</p>
-                        <div class="pg paggination-list">
-                            <a href="" class="arrow-link rounded-circle position-relative left-link"><i
-                                    class="fas fa-arrow-left position-absolute top-50 start-50 arrow"></i></a>
-                            <a href="" class="arrow-link rounded-circle position-relative right-link"><i
-                                    class="fas fa-arrow-right position-absolute top-50 start-50 arrow"></i></a>
-                        </div>
                     </div>
                     <div class="col-5">
                         <img src="../assets/img/section-5-img.png" alt="" class="img-fluid img-section-5 ">
@@ -420,7 +435,7 @@
             </div>
         </section>
         <!-- footer  -->
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="container">
                 <div class="footer__inner d-flex align-items-center justify-content-between">
                     <h2 class="footer_name">FurniCD</h2>
@@ -530,7 +545,39 @@
             </div>
         </footer>
     </div>
-
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel" class="desc-title">    <i class="fa-solid fa-cart-shopping" style="font-size:20px;"></i> Shopping Cart</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="total-box w-100 d-flex justify-content-between mb-4">
+                <h2 class="desc-title ">Product total:</h2>
+                <span id="total-value" class="text-success fs-4 fw-bold"></span>
+            </div>
+          <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+          </table>
+          <div class="w-100 d-flex justify-content-end">
+            <button id="clear-cart-btn" class="btn btn-danger">Clear All</button>
+          </div>
+          <div class="d-flex justify-content-center position-fixed bottom-0 pb-3">
+            <button class="btn btn-success pay-btn">Paying</button>
+          </div>
+        </div>
+        </div>
 </body>
 
 </html>

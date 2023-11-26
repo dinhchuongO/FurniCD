@@ -1,6 +1,11 @@
 * {
+    box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0;  
+}
+
+body {
+    font-family: 'Saira', sans-serif;
 }
 
 .section_pm {
@@ -9,13 +14,17 @@
 }
 
 .heading_pm {
-    font-size: 18px;
-    font-weight: bold;
+    
     padding-bottom: 23px;
     margin-bottom: 24px;
     border-bottom: 1px solid #ccc;
 }
-
+.heading_pm a{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
 .mtop {
     position: relative;
     top: 1px;
@@ -37,8 +46,9 @@
     margin-left: auto;
     width: 388px;
     border-radius: 20px;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
@@ -93,23 +103,41 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .sub {
-    padding-top: 14px;
+    padding-top: 16px;
     border-top: 1px solid #ccc;
     margin-top: 24px;
 }
 
 .colo {
-    font-size: 14px;
+    font-size: 16px;
     color: #FEFCFC;
 }
 
 .pad {
     margin-top: 26px;
     padding: 18px 24px;
-    background: rgba(217, 217, 217, 0.20);
     border-radius: 12px;
 }
 
 .pad div {
     color: #FEFCFC;
+}
+
+table th{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+   
+}
+table tr{
+    height: 50px;
+}
+table tr td{
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+table tr td img{
+    width: 30px;
+    height: 30px;
 }

@@ -3,10 +3,8 @@ $(document).ready(function () {
     var active = 0;
     var deg_bg = 0;
     var begin = true;
-    var isPaused = false;
-    var interval;
-
     function Load() {
+
         if (begin) {
             begin = false;
         } else {
@@ -21,38 +19,22 @@ $(document).ready(function () {
         $('.dots-page div').removeClass('active');
         $('#dot_' + active).addClass('active');
 
+
         deg_bg = deg_bg - 100;
         $('.bg-rotate').css('transform', 'rotate(' + deg_bg + 'deg)');
     }
-
-    function Time() {
-        if (!isPaused) {
-            active = active + 1 >= count_group ? 0 : active + 1;
-            Load();
-        }
+    function Play() {
+        active = active + 1 >= count_group ? 0 : active + 1;
+        Load()
     }
-
-    function startRotation() {
-        interval = setInterval(Time, 2500);
-    }
-
-    startRotation();
-
+    $('#next').on('click',function(){
+        setInterval(Play,3000)
+    } )
     $('#prev').on('click', function () {
-        if (isPaused) {
-            $(this).html('<i class="fa-solid fa-pause"></i>');
-            isPaused = false;
-            startRotation();
-        } else {
-            // Pause rotation
-            $(this).html('<i class="fa-solid fa-play"></i>');
-
-            clearInterval(interval);
-            isPaused = true;
-        }
-    });
-
-    $('#next').on('click', function () {
-        Time();
-    });
+        active = active - 1 < 0 ? count_group - 1 : active - 1;
+    })
 });
+
+
+
+

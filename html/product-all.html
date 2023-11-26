@@ -11,54 +11,69 @@
   <link rel="stylesheet" href="../assets/framework/bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <script src="../assets/framework/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/product-all.css">
-  <script src="../Javascript/product-all.js"></script>
+  <script src="../Javascript/add-to-cart.js"></script>
+  <script src="../Javascript/Sign-in.js"></script>
 </head>
-
+   
 <body>
   <div class="container-fluid p-0">
-    <header class="header-inner d-flex align-items-center">
-      <div class="container ">
-        <div class="row">
-          <div class="col-3 d-flex align-items-center">
-            <div class=" brand d-flex justify-content-start">
-              <img src="../assets/img/logo.png" alt="" class="logo">
-              <span href="" class="brand_link align-items-center">DCFuni</span>
-            </div>
+    <div class="container-fluid background-color py-2 position-fixed top-0 start-0 end-0 header ">
+      <div class="row px-5 ">
+          <div class="col-1 ">
+              <img src="../assets/img/logo.png" class="header-logo" alt="">
           </div>
-          <div class="col-9 d-flex align-items-center justify-content-end">
-            <ul class="nav align-items-center mr-3">
-              <li class="nav-item ">
-                <a class="nav-link" href="../html/home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/product-all.html">Product</a>
-              </li>
-              <li class="nav-item mr-3">
-                <a class="nav-link" href="">Contact</a>
-              </li>
-              <li class="nav-item " id="search-box">
-                <form class="d-flex" width="300px">
-                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                  <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                </form>
-              </li>
-              <li class="nav-item ">
-                <button class="btn btn-nav " id="search" type="submit"><i
-                    class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="btn btn-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
-                <button class="btn btn-nav position-relative" id="user"><i class="fa-solid fa-user"></i></button>
-              </li>
-            </ul>
+          <div class="col-11 ">
+              <div class="row d-flex justify-content-between">
+                  <div class="col-6">
+                      <ul class="nav d-flex justify-content-between">
+                          <li class="nav-item ">
+                          <a class="nav-link " href="../html/home.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link " href="../html/home.html#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link " href="../html/product-all.html">Product</a>
+                          </li>
+                          <li class="nav-item ">
+                          <a class="nav-link " href="../html/order-pay.html">Order</a>
+                          </li>
+                          <li class="nav-item ">
+                              <a class="nav-link " href="#footer">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-4  d-flex justify-content-end">
+                      <div id="add-logo" class="w-100 d-flex justify-content-end">
+                          <a id="btn-1" href="../html/sign-in.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign in</a>
+                          <a id="btn-2" href="../html/sign-up.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign up</a>
+                          <img id="avta" src="../assets/img/avatar.svg" class="avatar-header " alt="">
+                          <button id="out" class="btn  avatar-header mx-2"><i class="fa-solid  fa-right-from-bracket fs-5 text-white"></i></button> 
+                      </div>
+                  </div>
+                  <!-- <div class="col-3 d-flex align-items-center ">
+                      <button class="btn  bg-transparent" type="submit"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></button>
+                      <span class="text-white">0123-234-5678</span>
+                  </div> -->
+              </div>
+              <div class="row d-flex justify-content-between align-items-center py-1">
+                  <div class="col-5 d-flex ">
+                      <div class="input-group position-relative ">
+                          <label class="btn py-2 position-absolute top-0 start-0 rounded-pill" ><i class="fa-solid fa-magnifying-glass"></i></label>
+                          <input type="search" class="w-100 py-2 ps-5 rounded-pill" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                  </div>
+                  <div class="col-1  d-flex justify-content-end align-items-center">
+                      <button class=" btn rounded-1 bg-transparent shadow-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <i class="fa-solid fa-cart-shopping" style="color:#ffffff;"></i>
+                      </button>
+                  </div>
+              </div>
           </div>
-        </div>
-
       </div>
-    </header>
+  </div>
     <div class="hero">
       <div class="container p-0 p-3 ">
         <div class="row ">
@@ -130,59 +145,125 @@
         </div>
       </div>
     </div>
-    <section class="section">
+      <section class="section">
       <div class="container">
         <div class="row">
           <h2 class="title">Welcome to DC's Funiture</h2>
         </div>
         <div class="row" id="type-list">
-          <div class="col-4" id="card-type">
-            <div class="product-type p-2">
-              <div class="row">
-                <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
-                  <h3 class="title">Tables</h3>
-                  <button class="btn btn-dark btn-more text-white">See more</button>
-                </div>
-                <div class="col-7">
-                  <img class="img-fluid" src="../assets/img/Table.svg" alt="">
-                </div>
+          <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">  
+                <div class="row">
+                    
+                  <div class="col-4" id="card-type">
+                    <div class="product-type p-2">
+                      <div class="row">
+                        <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
+                          <h3 class="title">Sofa</h3>
+                          <button class="btn btn-dark btn-more text-white">See more</button>
+                        </div>
+                        <div class="col-7">
+                          <img class="img-fluid" src="../assets/img/Sofa.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="col-4" id="card-type">
+                    <div class="product-type p-2">
+                      <div class="row">
+                        <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
+                          <h3 class="title">Desk</h3>
+                          <button class="btn btn-dark btn-more text-white">See more</button>
+                        </div>
+                        <div class="col-7">
+                          <img class="img-fluid" src="../assets/img/Desk.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                    
+                  <div class="col-4" id="card-type">
+                    <div class="product-type p-2">
+                      <div class="row">
+                        <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
+                          <h3 class="title">Tables</h3>
+                          <button class="btn btn-dark btn-more text-white">See more</button>
+                        </div>
+                        <div class="col-7">
+                          <img class="img-fluid" src="../assets/img/Table.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>   
               </div>
-            </div>
-          </div>
-          <div class="col-4" id="card-type">
-            <div class="product-type p-2">
-              <div class="row">
-                <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
-                  <h3 class="title">Sofa</h3>
-                  <button class="btn btn-dark btn-more text-white">See more</button>
-                </div>
-                <div class="col-7">
-                  <img class="img-fluid" src="../assets/img/Sofa.svg" alt="">
-                </div>
+              <div class="carousel-item">
+                <div class="row">
+              
+                  <div class="col-4" id="card-type">
+                    <div class="product-type p-2">
+                      <div class="row">
+                        <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
+                          <h3 class="title">Sofa</h3>
+                          <button class="btn btn-dark btn-more text-white">See more</button>
+                        </div>
+                        <div class="col-7">
+                          <img class="img-fluid" src="../assets/img/hero-1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="col-4" id="card-type">
+                    <div class="product-type p-2">
+                      <div class="row">
+                        <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
+                          <h3 class="title">Desk</h3>
+                          <button class="btn btn-dark btn-more text-white">See more</button>
+                        </div>
+                        <div class="col-7">
+                          <img class="img-fluid" src="../assets/img/hero-2.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                    
+                  <div class="col-4" id="card-type">
+                    <div class="product-type p-2">
+                      <div class="row">
+                        <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
+                          <h3 class="title">Tables</h3>
+                          <button class="btn btn-dark btn-more text-white">See more</button>
+                        </div>
+                        <div class="col-7">
+                          <img class="img-fluid" src="../assets/img/hero-3.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div> 
               </div>
+              
             </div>
-          </div>
-          <div class="col-4" id="card-type">
-            <div class="product-type p-2">
-              <div class="row">
-                <div class="col-4 offset-1 d-flex flex-column justify-content-center pl-1">
-                  <h3 class="title">Desk</h3>
-                  <button class="btn btn-dark btn-more text-white">See more</button>
-                </div>
-                <div class="col-7">
-                  <img class="img-fluid" src="../assets/img/Desk.svg" alt="">
-                </div>
-              </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <!-- <div class="btn-type-group">
-              <button class="btn " id="prev-btn" >Next</button>
-              <button class="btn " id="next-btn" >Previos</button>
-            </div> -->
           </div>
-        </section>
-        <section class="section-4 position-relative">
+      </section>
+      <section class="section-4 position-relative">
           <h2 class="title position-absolute">All Product</h2>
           <p class="sub-title position-absolute">
               The products we provide only for you as our service are selected from the
@@ -190,473 +271,256 @@
           </p>
           <div class="container ">
               <div class="product-list">
-                  <div class="row mb-5">
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-                              <img src="../assets/img/product-1.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                  <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title ">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
+                <div class="row mb-5">
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-9.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-1.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Yellow Sofa</h3>
+                        <span class="price">$50.00</span>
+                        <span class="sale">$82.00</span>
                       </div>
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                              <img src="../assets/img/product-2.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                   <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                              <img src="../assets/img/product-3.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                   <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                              <img src="../assets/img/product-4.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                   <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
-                      </div>
+                    </div>
                   </div>
-                  <div class="row mb-5">
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                              <img src="../assets/img/product-5.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                   <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-10.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-2.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">White Sofa</h3>
+                        <span class="price">$75.00</span>
+                        <span class="sale">$99.00</span>
                       </div>
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                              <img src="../assets/img/product-6.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                   <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                              <img src="../assets/img/product-8.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                   <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                              <img src="../assets/img/product-4.png" class=" card-img-top img-card" alt="...">
-                              <div class="card-body position-relative p-0">
-                                   <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                  <h3 class="desc-title">Ceiling Light</h3>
-                                  <span class="price">$75.00</span>
-                                  <span class="sale">$82.00</span>
-                              </div>
-                          </div>
-                      </div>
+                    </div>
                   </div>
-                  <div class="row mb-5">
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-9.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-11.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-3.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Ceiling Light</h3>
+                        <span class="price">$24.00</span>
+                        <span class="sale">$100.00</span>
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-10.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-12.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-4.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Dark Table</h3>
+                        <span class="price">$55.00</span>
+                        <span class="sale">$87.00</span>
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-11.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-12.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="row mb-5">
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-13.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-13.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-5.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Green Sofa</h3>
+                        <span class="price">$75.00</span>
+                        <span class="sale">$82.00</span>
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-14.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-14.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-6.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Open Shelf</h3>
+                        <span class="price">$55.00</span>
+                        <span class="sale">$89.00</span>
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-15.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-15.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-7.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Sofa Open</h3>
+                        <span class="price">$125.00</span>
+                        <span class="sale">$200.00</span>
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card card-box " style="width: 100%; height: 380px;">
-          
-                            <img src="../assets/img/product-16.svg" class=" card-img-top img-card" alt="...">
-                            <div class="card-body position-relative p-0">
-                                 <button class="cart-btn position-absolute">
-                                    <i class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                                  </button>
-                                <h3 class="desc-title">Ceiling Light</h3>
-                                <span class="price">$75.00</span>
-                                <span class="sale">$82.00</span>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-16.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-8.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Around Chair</h3>
+                        <span class="price">$85.00</span>
+                        <span class="sale">$102.00</span>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-9.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-1.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Yellow Sofa</h3>
+                        <span class="price">$50.00</span>
+                        <span class="sale">$82.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-10.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-2.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">White Sofa</h3>
+                        <span class="price">$75.00</span>
+                        <span class="sale">$99.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-11.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-3.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Ceiling Light</h3>
+                        <span class="price">$24.00</span>
+                        <span class="sale">$100.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-12.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-4.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Dark Table</h3>
+                        <span class="price">$55.00</span>
+                        <span class="sale">$87.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-13.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-5.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Green Sofa</h3>
+                        <span class="price">$75.00</span>
+                        <span class="sale">$82.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-14.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-6.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Open Shelf</h3>
+                        <span class="price">$55.00</span>
+                        <span class="sale">$89.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-15.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-7.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Sofa Open</h3>
+                        <span class="price">$125.00</span>
+                        <span class="sale">$200.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-box " style="width: 100%; height: 380px;">
+      
+                      <img src="../assets/img/product-16.svg" class=" card-img-top img-card" alt="...">
+                      <div class="card-body position-relative p-0">
+                        <a href="../html/product-8.html" class="cart-btn  position-absolute">
+                          <i
+                            class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                        </a>
+                        <h3 class="desc-title">Around Chair</h3>
+                        <span class="price">$85.00</span>
+                        <span class="sale">$102.00</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-2.png" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-3.png" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-4.png" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="row">
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-5.png" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-6.png" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-8.png" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-4.png" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-9.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-10.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-11.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-12.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-13.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-14.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-15.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card card-box " style="width: 100%; height: 380px;">
-
-                <img src="../assets/img/product-16.svg" class=" card-img-top img-card" alt="...">
-                <div class="card-body position-relative p-0">
-                  <button class="cart-btn position-absolute">
-                    <i
-                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
-                  </button>
-                  <h3 class="desc-title">Ceiling Light</h3>
-                  <span class="price">$75.00</span>
-                  <span class="sale">$82.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <section class="section-6">
       <div class="container">
@@ -677,9 +541,8 @@
           </div>
         </div>
       </div>
-      `
     </section>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="footer__inner d-flex align-items-center justify-content-between">
           <h2 class="footer_name">FurniCD</h2>
@@ -789,118 +652,43 @@
       </div>
     </footer>
   </div>
-
-  <!-- MODAL SIGNIN SIGNUP -->
-
-  <!-- SIGNIN -->
-  <!-- <div class="modal fade" id="modal-sign-up" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <form action="">
-                <div class="input-group my-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                  </div>
-                  <input id="Name" type="text" class="form-control" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <span id="errorName" class="text-danger"></span>
-                <div class="input-group my-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-                  </div>
-                  <input id="Email" type="text" class="form-control" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <span id="errorEmail" class="text-danger"></span>
-                <div class="input-group my-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></i></span>
-                  </div>
-                  <input id="Pass" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-                  
-                </div>
-                <span id="errorPass" class="text-danger"></span>
-                <div class="input-group my-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-key"></i></i></span>
-                  </div>
-                  <input id="RePass" type="password" class="form-control" placeholder="Repeat your password" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <span id="errorRePass" class="text-danger"></span>
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            <button type="button" id="Register" class="btn btn-success">Register</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-  <!-- SIGNUP -->
-  <!-- <div class="modal fade" id="modal-sign-in" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-            
-              <form action="">
-                <div class="input-group my-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                  </div>
-                  <input id="Emailin" type="text" class="form-control" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <span id="errorEmailin" class="text-danger"></span>
-                <div class="input-group my-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></i></span>
-                  </div>
-                  <input id="Passin" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <span id="errorPassin" class="text-danger"></span>
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            <button type="button" id="Log-in" class="btn btn-success">Log In</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  <!-- MODAL SIGNIN SIGNUP -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
-      <h5 id="offcanvasRightLabel">Giỏ hàng</h5>
+      <h5 id="offcanvasRightLabel" class="desc-title">    <i class="fa-solid fa-cart-shopping" style="font-size:20px;"></i> Shopping Cart</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      Chưa có sản phẩm
-    </div>
-  </div>
-</body>
-<script>
-  $(document).ready(function () {
-    $("#search").click(function () {
-      $('#search-box').toggle()
-    })
-    $("#user").click(function () {
-      window.location.href = "../html/sign-in.html"
-    })
-  })
-</script>
+        <div class="total-box w-100 d-flex justify-content-between mb-4">
+            <h2 class="desc-title ">Product total:</h2>
+            <span id="total-value" class="text-success fs-4 fw-bold"></span>
+        </div>
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
 
+        </tbody>
+      </table>
+      <div class="w-100 d-flex justify-content-end">
+        <button id="clear-cart-btn" class="btn btn-danger">Clear All</button>
+      </div>
+      <div class="d-flex justify-content-center position-fixed bottom-0 pb-3">
+        <button class="btn btn-success pay-btn">Paying</button>
+      </div>
+    </div>
+    </div>
+</body> 
+<script>
+  		$('#blogCarousel').carousel({
+				interval: 5000
+		});
+</script>
 </html>

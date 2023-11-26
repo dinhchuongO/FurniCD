@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/FAVICON/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/font/Saira">
+    <script src="../assets/framework/jquery.js"></script>
+    <link rel="stylesheet" href="../assets/framework/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../assets/framework/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/product-1.css">
+    <script src="../Javascript/add-to-cart.js"></script>
+    <script src="../Javascript/Sign-in.js"></script>
+</head>
+
+<body>
+   <div class="container-fluid p-0 ">
+        <header>
+            <div class="container-fluid background-color py-2 position-fixed top-0 start-0 end-0 header ">
+                <div class="row px-5 ">
+                    <div class="col-1 ">
+                        <img src="../assets/img/logo.png" class="header-logo" alt="">
+                    </div>
+                    <div class="col-11 ">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-6">
+                                <ul class="nav d-flex justify-content-between">
+                                    <li class="nav-item ">
+                                    <a class="nav-link " href="../html/home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link " href="../html/home.html#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link " href="../html/product-all.html">Product</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                    <a class="nav-link " href="../html/order-pay.html">Order</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#footer">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-4  d-flex justify-content-end">
+                                <div id="add-logo" class="w-100 d-flex justify-content-end">
+                                    <a id="btn-1" href="../html/sign-in.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign in</a>
+                                    <a id="btn-2" href="../html/sign-up.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign up</a>
+                                    <img id="avta" src="../assets/img/avatar.svg" class="avatar-header " alt="">
+                                    <button id="out" class="btn  avatar-header mx-2"><i class="fa-solid  fa-right-from-bracket fs-5 text-white"></i></button> 
+                                </div>
+                            </div>
+                            <!-- <div class="col-3 d-flex align-items-center ">
+                                <button class="btn  bg-transparent" type="submit"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></button>
+                                <span class="text-white">0123-234-5678</span>
+                            </div> -->
+                        </div>
+                        <div class="row d-flex justify-content-between align-items-center py-1">
+                            <div class="col-5 d-flex ">
+                                <div class="input-group position-relative ">
+                                    <label class="btn py-2 position-absolute top-0 start-0 rounded-pill" ><i class="fa-solid fa-magnifying-glass"></i></label>
+                                    <input type="search" class="w-100 py-2 ps-5 rounded-pill" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="col-1  d-flex justify-content-end align-items-center">
+                                <button class=" btn rounded-1 bg-transparent shadow-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-cart-shopping" style="color:#ffffff;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+           <div class="container">
+                <div class="row product-detail">
+                    <div class="col-5 d-flex justify-content-center align-items-center">
+                        <div class="product-img">
+                            <img src="../assets/img/product-11.svg" alt="" class="img-fluid w-100 boder-radius">
+                            <div class="owl-carousel owl-theme mt-2 d-flex">
+                                <div class="item">
+                                    <img src="../assets/img/product-11.svg" alt="" class="img-fluid ">
+                                </div>
+                                <div class="item">
+                                    <img src="../assets/img/product-11.svg" alt="" class="img-fluid ">
+                                </div>
+                                <div class="item">
+                                    <img src="../assets/img/product-11.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="item">
+                                    <img src="../assets/img/product-11.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="item">
+                                    <img src="../assets/img/product-11.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 px-5">
+                        <div class="detail py-4">
+                            <h2 class="title">Celling Light</h2>
+                            <div class="row mt-2">
+                                <div class="col-3 ">
+                                    <span class="star">
+                                        <i class="fa-solid fa-star" style="color: #c00202;"></i>
+                                        <i class="fa-solid fa-star" style="color: #c00202;"></i>
+                                        <i class="fa-solid fa-star" style="color: #c00202;"></i>
+                                        <i class="fa-solid fa-star" style="color: #c00202;"></i>
+                                        <i class="fa-solid fa-star" style="color: #c00202;"></i>
+                                    </span>
+                                </div>
+                                <div class="col-3">
+                                    <span class="number">
+                                        <span>1,2k</span> Reviews
+                                    </span>
+                                </div>
+                                <div class="col-3">
+                                    <span class="number">
+                                        <span>2,2k</span> Sold
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row price-box mt-3 p-4 rounded-2 ">
+                                <div class="d-flex">
+                                    <div class="fs-5 text-decoration-line-through text-secondary d-flex align-items-center cost">
+                                        $100
+                                    </div>
+                                    <div class=" fs-2 text-danger mx-2 cost-down">
+                                        $24
+                                    </div>
+                                    <div class="bg-danger text-white px-2 d-flex align-items-center">
+                                        76% off
+                                    </div>
+                                </div>
+                                <div class=" row mt-3">
+                                    <div class="col-1 d-flex align-items-center" ><i class="fa-brands fa-shopify" style="color: #c00202;"></i></div>
+                                    <div class="col-5">
+                                        Best seller <i class="fa-regular fa-circle-question text-dark fa-xs ml-1"></i> <br>
+                                        <span>
+                                            Best price on DC Furni
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row shipping mb-5">
+                                <div class="row">
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-secondary fs-5">
+                                            Transport
+                                        </div>
+                                        <div class="icon px-4"><img src="../assets/img/free_ship.png" alt=""></div>
+                                        <div class="fs-5">Free shipping</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex ship-city mt-1">
+                                    <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                                    <div class="text-secondary ms-4 ">
+                                        Transport to
+                                        <select class="select ps-4" name="" id="">
+                                            <option value="1">Ho Chi Minh city</option>
+                                            <option value="2">Ha Noi</option>
+                                            <option value="3">Da Nang</option>
+                                        </select>
+                                        <br>
+                                        <span
+                                            style="color: #757575; padding:10px 10px 0 0; display: inline-block;">Transport
+                                            fee</span>
+                                        <span class="text-dark border-bottom border-dark">$0</span>
+                                    </div>
+                                </div>
+                                <div class="quantity d-flex align-items-center">
+                                    <p class="fs-5 text-secondary">
+                                        Quantity
+                                    </p>
+                                    <div class="set-qlt ps-5">
+                                        <button id="sub" >-</button>
+                                        <input  type="text" name="" id="product-quantity" value="1">
+                                        <button id="add">+</button>
+        
+                                    </div>
+                                    <p class="qlt_desc ps-4">3000 products available</p>
+                                </div>
+                            </div>
+                            <div class="row btn-shop mt-5 ">
+                                <div class="col-8 d-flex justify-content-between">
+                                    <button class="btn w-50 btn-add add-cart" data-name="Celling Light" data-img="../assets/img/product-11.svg" data-price="24">
+                                        <i class="fa-solid fa-cart-plus pr-2" style="color: #c00202;"></i>
+                                        Add to cart
+                                    </button>
+                                    <a href="../html/order-pay.html"  class="btn w-50 btn-buy add-cart" data-name="Celling Light" data-img="../assets/img/product-11.svg" data-price="24">
+                                        Buying
+                                    </a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+           </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="d-flex align-items-center justify-content-between pb-5">
+                        <div class="d-flex align-items-center">
+                            <div class="text-secondary fs-5">Discount combos</div>
+                            <button class=" btn text-danger border-danger border-1 ms-3 ">Buy 2 get 10% off</button>
+                        </div>
+                        <a href="../html/product-all.html" class="text-danger text-decoration-none">See all <i class="fa-solid fa-chevron-right fa-2xs pos pl-1" style="color: #c00202;"></i></a>
+                    </div>
+                    <div class="product-list">
+                        <div class="row mb-5">
+                            <div class="col-3">
+                              <div class="card card-box " style="width: 100%; height: 380px;">
+                
+                                <img src="../assets/img/product-9.svg" class=" card-img-top img-card" alt="...">
+                                <div class="card-body position-relative p-0">
+                                  <a href="../html/product-1.html" class="cart-btn  position-absolute">
+                                    <i
+                                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                                  </a>
+                                  <h3 class="desc-title">Yellow Sofa</h3>
+                                  <span class="price">$50.00</span>
+                                  <span class="sale">$82.00</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card card-box " style="width: 100%; height: 380px;">
+                
+                                <img src="../assets/img/product-10.svg" class=" card-img-top img-card" alt="...">
+                                <div class="card-body position-relative p-0">
+                                  <a href="../html/product-2.html" class="cart-btn  position-absolute">
+                                    <i
+                                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                                  </a>
+                                  <h3 class="desc-title">White Sofa</h3>
+                                  <span class="price">$75.00</span>
+                                  <span class="sale">$99.00</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card card-box " style="width: 100%; height: 380px;">
+                
+                                <img src="../assets/img/product-11.svg" class=" card-img-top img-card" alt="...">
+                                <div class="card-body position-relative p-0">
+                                  <a href="../html/product-3.html" class="cart-btn  position-absolute">
+                                    <i
+                                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                                  </a>
+                                  <h3 class="desc-title">Ceiling Light</h3>
+                                  <span class="price">$24.00</span>
+                                  <span class="sale">$100.00</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card card-box " style="width: 100%; height: 380px;">
+                
+                                <img src="../assets/img/product-12.svg" class=" card-img-top img-card" alt="...">
+                                <div class="card-body position-relative p-0">
+                                  <a href="../html/product-4.html" class="cart-btn  position-absolute">
+                                    <i
+                                      class="fa-solid fa-cart-shopping d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                                  </a>
+                                  <h3 class="desc-title">Dark Table</h3>
+                                  <span class="price">$55.00</span>
+                                  <span class="sale">$87.00</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h2 class="title">Comments  </h2>
+                        <div class="row mt-3">
+                            <div class="col-1 ">
+                                <a href="" class="avt-link"><img src="../assets/img/avatar.svg" alt=""
+                                        class="avt-img"></a>
+                            </div>
+                            <div class="col-4 offset-1 py-3 ">
+                                <h3 class="desc-title">Josh Smith</h3>
+                                <p class="desc-sub-title avt-title">Manager of The New York Times</p>
+                            </div>
+                        </div>
+                        <p class="sub-title">“They are have a perfect touch for make something so professional ,interest
+                            and useful for a lot of people .”</p>
+                            <div class="row mt-3">
+                                <div class="col-1 ">
+                                    <a href="" class="avt-link"><img src="../assets/img/avatar.svg" alt=""
+                                            class="avt-img"></a>
+                                </div>
+                                <div class="col-4 offset-1 py-3 ">
+                                    <h3 class="desc-title">Josh Smith</h3>
+                                    <p class="desc-sub-title avt-title">Manager of The New York Times</p>
+                                </div>
+                            </div>
+                            <p class="sub-title">“They are have a perfect touch for make something so professional ,interest
+                                and useful for a lot of people .”</p>
+                            <div class="row mt-3">
+                            <div class="col-1 ">
+                                <a href="" class="avt-link"><img src="../assets/img/avatar.svg" alt=""
+                                        class="avt-img"></a>
+                            </div>
+                            <div class="col-4 offset-1 py-3 ">
+                                <h3 class="desc-title">Josh Smith</h3>
+                                <p class="desc-sub-title avt-title">Manager of The New York Times</p>
+                            </div>
+                        </div>
+                        <p class="sub-title">“They are have a perfect touch for make something so professional ,interest
+                            and useful for a lot of people .”</p>
+                        <div class="row mt-3">
+                            <div class="col-1 ">
+                                <a href="" class="avt-link"><img src="../assets/img/avatar.svg" alt=""
+                                        class="avt-img"></a>
+                            </div>
+                            <div class="col-4 offset-1 py-3 ">
+                                <h3 class="desc-title">Josh Smith</h3>
+                                <p class="desc-sub-title avt-title">Manager of The New York Times</p>
+                            </div>
+                        </div>
+                        <p class="sub-title">“They are have a perfect touch for make something so professional ,interest
+                            and useful for a lot of people .”</p>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer__inner d-flex align-items-center justify-content-between">
+                    <h2 class="footer_name">FurniCD</h2>
+                    <div class="footer_social d-flex">
+                        <i class="fa-brands fa-instagram footer_icon"></i>
+                        <i class="fa-brands fa-facebook footer_icon"></i>
+                        <i class="fa-brands fa-twitter footer_icon"></i>
+                        <i class="fa-brands fa-github footer_icon"></i>
+                        <i class="fa-brands fa-linkedin footer_icon "></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <!-- footer product 1 -->
+                    <div class="footer_product">
+                        <h3 class="footer_heading">Our Products</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">The Support Suite</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">The Sales Suite</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Support</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- footer product 2 -->
+                    <div class="footer_product">
+                        <h3 class="footer_heading">Top Features</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Ticketing System</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Knowledge Base</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Community Forums</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Help Desk Software</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- footer product 3 -->
+                    <div class="footer_product">
+                        <h3 class="footer_heading">Resources</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Product Support</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Request Demo</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Library</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Peoplepower Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- footer product 4 -->
+                    <div class="footer_product">
+                        <h3 class="footer_heading">Company</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">About Us</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Press</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Investors</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- footer product 5 -->
+                    <div class="footer_product">
+                        <h3 class="footer_heading">Favourite Things</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">For Enterprise</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">For Startups</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">For Benchmark</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#!" class="footer_link">For Small Business</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer__bottom">
+                    © Furniture CD 2023 - All Rights Reserved
+                </p>
+            </div>
+        </footer>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel" class="desc-title">    <i class="fa-solid fa-cart-shopping" style="font-size:20px;"></i> Shopping Cart</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="total-box w-100 d-flex justify-content-between mb-4">
+                    <h2 class="desc-title ">Product total:</h2>
+                    <span id="total-value" class="text-success fs-4 fw-bold"></span>
+                </div>
+              <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                </tbody>
+              </table>
+              <div class="w-100 d-flex justify-content-end">
+                <button id="clear-cart-btn" class="btn btn-danger">Clear All</button>
+              </div>
+              <div class="d-flex justify-content-center position-fixed bottom-0 pb-3">
+                <button class="btn btn-success pay-btn">Paying</button>
+              </div>
+            </div>
+            </div>
+   </div>
+</body>
+
+</html>

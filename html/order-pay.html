@@ -7,67 +7,69 @@
     <title>Payment DC</title>
     <link rel="stylesheet" href="../assets/FAVICON/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="../assets/font/Saira">
-    <link rel="stylesheet" href="../assets/framework/bootstrap-4/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/framework/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <script src="../assets/framework/bootstrap-4/js/bootstrap.min.js"></script>
+    <script src="../assets/framework/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/payment.css">
+    <link rel="stylesheet" href="../assets/css/order-pay.css">
     <script src="../assets/framework/jquery.js"></script>
+    <script src="../Javascript/add-to-cart.js"></script>
+    <script src="../Javascript/Sign-in.js"></script>
 </head>
 
 <body>
     <div class="container-fluid p-0">
         <header>
-            <div class="container-fluid p-0 w-100 background-color py-2 position-fixed top-0 start-0 end-0"
-                style="z-index: 100; background: #000;">
-                <div class="row px-4 ">
+            <div class="container-fluid background-color py-2 position-fixed top-0 start-0 end-0 header ">
+                <div class="row px-5 ">
                     <div class="col-1 ">
-                        <a href="./home.html"><img src="../assets/img/logo.png" class="img-fluid" alt=""></a>
+                        <img src="../assets/img/logo.png" class="header-logo" alt="">
                     </div>
-                    <div class="col-11">
+                    <div class="col-11 ">
                         <div class="row d-flex justify-content-between">
-                            <div class="col-2 d-flex align-items-center ">
-                                <button class="btn  bg-transparent" type="submit">
-                                    <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>
-                                </button>
-                                <span style="color: #fff; font-weight: bold;">090-123-3455</span>
-                            </div>
-                            <div class="col-4 ">
+                            <div class="col-6">
                                 <ul class="nav d-flex justify-content-between">
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="../html/home.html">Home</a>
+                                    <a class="nav-link " href="../html/home.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="./product-1.html">About</a>
+                                    <a class="nav-link " href="../html/home.html#about">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="../html/product-all.html">Product</a>
+                                    <a class="nav-link " href="../html/product-all.html">Product</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="">Contact</a>
+                                    <a class="nav-link " href="../html/order-pay.html">Order</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#footer">Contact</a>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="row d-flex justify-content-between pt-3">
-                            <div class="col-1  d-flex align-items-center">
-                                <button class=" btn    shadow-none ">
-                                    <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
-                                </button>
-                            </div>
-                            <div class="col-6 d-flex ">
-                                <input class="search_nav form-control " type="search" placeholder="Search..."
-                                    aria-label="Search">
-                                <button class="btn rounded-circle bg-transparent posit" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </div>
-                            <div class="col-3  d-flex justify-content-center">
-                                <div class="w-100 d-flex justify-content-end">
-                                    <button class="btn-sign sign-in">Sign in</button>
-                                    <button class="btn-sign sign-up">Sign up</button>
+                            <div class="col-4  d-flex justify-content-end">
+                                <div id="add-logo" class="w-100 d-flex justify-content-end">
+                                    <a id="btn-1" href="../html/sign-in.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign in</a>
+                                    <a id="btn-2" href="../html/sign-up.html" class="btn text-white bg-transparent rounded-pill w-25 mx-1 btn-hover ">Sign up</a>
+                                    <img id="avta" src="../assets/img/avatar.svg" class="avatar-header " alt="">
+                                    <button id="out" class="btn  avatar-header mx-2"><i class="fa-solid  fa-right-from-bracket fs-5 text-white"></i></button> 
                                 </div>
+                            </div>
+                            <!-- <div class="col-3 d-flex align-items-center ">
+                                <button class="btn  bg-transparent" type="submit"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></button>
+                                <span class="text-white">0123-234-5678</span>
+                            </div> -->
+                        </div>
+                        <div class="row d-flex justify-content-between align-items-center py-1">
+                            <div class="col-5 d-flex ">
+                                <div class="input-group position-relative ">
+                                    <label class="btn py-2 position-absolute top-0 start-0 rounded-pill" ><i class="fa-solid fa-magnifying-glass"></i></label>
+                                    <input type="search" class="w-100 py-2 ps-5 rounded-pill" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="col-1  d-flex justify-content-end align-items-center">
+                                <button class=" btn rounded-1 bg-transparent shadow-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-cart-shopping" style="color:#ffffff;"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -80,13 +82,31 @@
                     <div class="col-8">
                         <div class="row">
                             <div class="col-12">
-                                <h4 class="heading_pm">
-                                    <i class="fa-solid fa-chevron-left fa-xs mr-2 mtop"></i>Shopping Continue
+                                <h4  class="heading_pm">
+                                    <a href="../html/product-all.html"><i class="fa-solid fa-chevron-left fa-xs mr-2 mtop"></i> Shopping Continue</a>
                                 </h4>
                             </div>
                             <div class="col-12">
-                                <p class="shop">Shopping cart</p>
-                                <span class="shop_item">You have some item in your cart</span>
+                               
+                              <table class=" table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th></th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                        
+                                </tbody>
+                              </table>
+                            <div class="total-box w-100 d-flex justify-content-end mb-4">
+                                <h2 class="desc-title px-5">Product total:</h2>
+                                <span id="total-value" class="text-success fs-4 fw-bold"></span>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -140,22 +160,26 @@
                             </div>
                             <div class="d-flex align-items-center justify-content-between sub">
                                 <div class="colo">Subtotal</div>
-                                <div class="colo">$1,668</div>
+                                <div id="total" class="colo"></div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mt-2">
-                                <div class="colo">Shiping</div>
-                                <div class="colo">$4</div>
+                                <div class="colo">Shiping 5% (Free just 1)</div>
+                                <div id="ship" class="colo">$0</div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mt-2">
-                                <div class="colo">Total (Tax incl.)</div>
-                                <div class="colo">$1,672</div>
+                                <div class="colo">Tax 10%</div>
+                                <div id="tax" class="colo"></div>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center pad ">
-                                <div class="total">$1,672</div>
-                                <div class="check">check out
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="colo">Total </div>
+                                <div id="sum-total" class="colo"></div>
+                            </div>
+                            <button class=" btn btn-success w-100 d-flex justify-content-between align-items-center pad ">
+                                <div id="check-total" class="fst-italic"></div>
+                                <div class="check">Check out
                                     <i class="fa-solid fa-arrow-right" style="color: #FEFCFC;"></i>
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>

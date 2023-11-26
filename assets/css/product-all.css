@@ -6,107 +6,13 @@
 body {
     font-family: 'Saira', sans-serif;
 }
-
-
-.title {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 52px;
-}
-
-.sub-title {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 34px;
-}
-
-.desc-title {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 28px;
-}
-
-.desc-sub-title {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-}
-
-.header-inner{
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 200;
-  background-color: black;
-}
-
-.brand{
-    height: 100%;
-    width: fit-content;
-}
-
-.logo{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-.brand_link{
-    height: 100%;
-    color: #fff;
-    font-weight: 550;
-    font-size: 35px;
-    line-height: 70px;
-    text-decoration: none;
-}
-
-.nav-link,
-.btn{
-    height: 100%;
-    padding: 10px auto;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 600;
-}
-.nav-link{
-    position: relative;
-    color: #fff;
-}
-.nav-link::after {
-    content: "";
-    position: absolute;
-    background-color: yellow;
-    height: 3px;
-    width: 0%;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 0;
-    transition: .35s ease;
-    border-radius: 6px;
-}
-.nav-link:hover:after {
-    width: 100%;
-}
-.nav-link:hover {
-    color: yellow;
-}
-.btn-nav{
-  color: #fff;
-  background-color: transparent;
-}
-.btn-nav:hover{
-  color: #fff;
-  background-color: transparent;
-}
 .hero {
     width: 100%;
     height:500px;
-    margin-top: 70px;
+    margin-top:140px;
 }
 .hero {
-    margin-top: 70px ;
+    margin-top: 140px ;
     height: fit-content;
 }
 
@@ -176,19 +82,6 @@ body {
     font-size: 12px;
 }
  
-.cart-btn{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: none;
-    right: 0;
-    top:30%;
-    background-color: transparent;
-}
-.cart-btn:hover{
-    background-color: black;
-    color: white;
-}
 
 .section-4 {
     height: 2000px;
@@ -297,72 +190,21 @@ body {
     padding: 0;
 }
 
-.footer {
-    background-color: #23262F;
-    padding: 65px 0 20px;
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
 }
 
-.footer__inner {
-    padding-bottom: 48px;
-    margin-bottom: 64px;
-    border-bottom: 1px solid #EAEEF3;
-}
-
-.footer_name {
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.footer_social {
-    column-gap: 16px;
-}
-
-.footer_icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 400;
-    width: 40px;
-    height: 40px;
-    background-color: #2b2b3f;
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
     border-radius: 50%;
+    width: 8px;
+    height: 8px;
 }
 
-.footer_heading {
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 25px;
-    transition: .3s ease-in-out;
-}
-
-.footer_heading:hover {
-    text-shadow: 3px 3px 3px #FFF;
-    cursor: pointer;
-}
-
-.footer_link {
-    display: inline-block;
-    margin-top: 15px;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42;
-    text-decoration: none;
-}
-
-.footer_link:hover {
-    color: yellow;
-  
-}
-.footer__bottom {
-    padding-top: 70px;
-    color: #FFF;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42;
+.blog .carousel-indicators .active {
+background: #707070;
 }

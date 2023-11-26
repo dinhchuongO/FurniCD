@@ -72,7 +72,7 @@ $(document).ready(function(){
     RePass.blur(checkRePass)
 
     $("#Register").click(function(){
-        if(!checkEmail ||!checkName ||!checkPass ||!checkRePass){
+        if(!checkEmail() ||!checkName() ||!checkPass() ||!checkRePass()){
             alert("Chưa nhập thông tin")
         }
         else{
@@ -115,14 +115,49 @@ $(document).ready(function(){
         errorPassin.html("")
         return true   
     }
+    var check=true
     $("#Log-in").click(function(){
         if(checkEmailin()&&checkPassin()){
             alert("Đăng nhập thành công")
             window.location.href="../html/home.html"
+            localStorage.setItem("Checkin","true")
             Emailin.html("")
             Passin.html("")
         }
-        Emailin.blur(checkEmailin)
-        Passin.blur(checkPassin)
+        else{
+            check=false
+            localStorage.setItem("Checkin","false")
+            Emailin.blur(checkEmailin)
+            Passin.blur(checkPassin)
+        }
+        
+        
     })
+     
+    // console.log(localStorage.getItem("Checkin")) 
+    update(localStorage.getItem("Checkin"))
+    $('#out').on('click',function(){
+        localStorage.setItem("Checkin","false")
+        // console.log(localStorage.getItem("Checkin"))
+        // console.log(k)
+        update(localStorage.getItem("Checkin"))
+        localStorage.removeItem("Pass")
+        localStorage.removeItem("Email")
+    })
+    
+
+    function update(k){
+        if(k=="true"){
+            $('#btn-1').hide()
+            $('#btn-2').hide()
+            $('#avta').show()
+            $('#out').show()
+        }
+        else if(k=="false"){
+            $('#btn-1').show()
+            $('#btn-2').show()
+            $('#avta').hide()
+            $('#out').hide()
+        }
+    }
 })
