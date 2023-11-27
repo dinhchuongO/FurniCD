@@ -71,6 +71,35 @@ $(document).ready(function(){
     }
     RePass.blur(checkRePass)
 
+    Tel = $("#Tel")
+    errorTel = $("#errorTel")
+    function checkTel(){
+        pattern = /^(09|03|07|06|05|04)\d{8}$/
+        if(Tel.val()==""){
+            errorTel.html("* Số điện thoại không được để trống")
+            return false
+        }
+        else if(!pattern.test(Tel.val())){
+            errorTel.html("* Số điện thoại không đúng định dạng")
+            return false
+        }
+        errorTel.html("")
+        return true   
+    }
+    Tel.blur(checkTel)
+
+    Address = $("#Address")
+    errorAddress = $("#errorAddress")
+    function checkAddress(){
+        if(Address.val()==""){
+            errorAddress.html("* Địa chỉ không được để trống")
+            return false
+        }
+        errorAddress.html("")
+        return true   
+    }
+    Address.blur(checkAddress)
+    var users = [];
     $("#Register").click(function(){
         if(!checkEmail() ||!checkName() ||!checkPass() ||!checkRePass()){
             alert("Chưa nhập thông tin")
@@ -78,8 +107,21 @@ $(document).ready(function(){
         else{
             localStorage.setItem('Email',Email.val())
             localStorage.setItem('Pass',RePass.val())
-            localStorage.setItem('Name',Name.val())
-            window.location.href="../html/sign-up.html"
+            var newUser = {
+                name:Name.val(),
+                email: Email.val(),
+                password: RePass.val(),
+                tel:Tel.val(),
+                address:Address.val()
+            };
+
+            // Thêm người dùng mới vào mảng
+            users.push(newUser);
+
+            // Đặt biến cục bộ để sử dụng trên các trang khác
+            localStorage.setItem("users", JSON.stringify(users));
+            // window.location.href="../html/sign-up.html"
+            // console.log(localStorage.getItem("users"))
             alert("Đăng kí thành công")
         }
         
@@ -141,8 +183,7 @@ $(document).ready(function(){
         // console.log(localStorage.getItem("Checkin"))
         // console.log(k)
         update(localStorage.getItem("Checkin"))
-        localStorage.removeItem("Pass")
-        localStorage.removeItem("Email")
+        location.reload()
     })
     
 
@@ -160,4 +201,6 @@ $(document).ready(function(){
             $('#out').hide()
         }
     }
+
+
 })
